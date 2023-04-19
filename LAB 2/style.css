@@ -1,0 +1,26 @@
+body{
+    background-color: #F0F2F5;
+    background-image: url(fb5.jpg);
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    flex:1;
+}
+.box2,.box3,.box1{
+    margin-top: 5%;
+    margin-left: 3.5%;
+    height: 350px;
+    width: 350px;
+    padding: 40px;
+}
+.form-group{
+    margin-bottom:30px;
+    margin:0 auto; 
+width:600px ;
+padding: 20px;
+}
