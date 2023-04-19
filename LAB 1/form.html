@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>registration form</title>
+</head>
+<body>
+	<form name="form" method="get" action="/.php">
+		<h1>Registration Form</h1>
+		<table >
+			<tr>
+				<td><label for="username">User name:</label></td>
+				<td><input type="text" name="username" id="username" placeholder="enter your name" required></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="email" name="email" id="mail" placeholder="enter email" required></td>
+			</tr>
+			<tr>
+				<td><label for="gender">Gender:</label></td>
+				<td><input type="radio" name="gen">male
+				<input type="radio" name="gen">female</td>
+			</tr>
+			<tr>
+				<td class=p1><label for="religion">Religion:</label></td>
+				<td><select name="rel" required>
+					<option value="hin">Hindu</option>
+					<option value="mus">Muslim</option>
+					<option value="christ">Christian</option></select></td>
+				</tr>
+			<tr>
+				<td><label for="dob">DOB:</label></td>
+				<td><input type="date" name="dob" required></td>
+			</tr>
+			<tr>
+				<td><label for="language">Languages:</label></td>
+				<td><input type="checkbox" name="language" id="language">Telugu
+				<input type="checkbox" name="language" id="language">Hindi
+				<input type="checkbox" name="language" id="language">English</td>
+			</tr>
+			<tr>
+				<td><label for="addres">Address:</label></td>
+				<td><textarea rows=5 col=5 placeholder="address is"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="password">Password:</label></td>
+				<td><input type="password" name="password" id="password" placeholder="enter password" required></td>
+			</tr>
+			<tr>
+				<td><label for="password">confirm Password:</label></td>
+				<td><input type="password" name="password" id="password" placeholder="confirm your password" required></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="Submit"></td>
+				<td><input type="reset" name="reset" value="reset"></td>
+			</tr>
+		</table>
+
+	</form>
+
+</body>
+</html>

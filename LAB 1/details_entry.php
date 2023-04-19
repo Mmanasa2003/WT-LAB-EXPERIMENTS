@@ -1,0 +1,61 @@
+//Full Code of php file for mySql database connection with html form
+<?php
+$server_name="localhost";
+$username="root";
+$password="";
+$database_name="database123";
+
+$conn=mysqli_connect($server_name,$username,$password,$database_name);
+//now check the connection
+if(!$conn)
+{
+	die("Connection Failed:" . mysqli_connect_error());
+
+}
+
+if(isset($_POST['save']))
+{	
+	 $first_name = $_POST['first_name'];
+	 $last_name = $_POST['last_name'];
+	 $gender = $_POST['gender'];
+	 $email = $_POST['email'];
+     $phone = $_POST['phone'];
+
+	 $sql_query = "INSERT INTO entry_details (first_name,last_name,gender,email,mobile)
+	 VALUES ('$first_name','$last_name','$gender','$email','$phone')";
+	 
+
+	 if (mysqli_query($conn, $sql_query)) 
+	 {
+		echo "New Details Entry inserted successfully !";
+	 } 
+	 $sql_query="select * from entry_details";
+	$result=mysqli_query($conn,$sql_query);
+	if(mysqli_num_rows()>0)
+	{
+		?>
+		<table border=1>
+			<tr>
+				<th>FIRST_NAME</th>
+				<th>LAST_NAME</th>
+				<th>GENDER</th>
+				<th>EMAIL</th>
+			    </th>MOBILE</th>
+	</tr>
+	<?php
+	    while($row=mysqli_fetch_assoc($result))
+		{?>
+		<?php
+			echo "<tr><td>".$row["first_name"]."</td><td>".$row["last_name"]."</td><td>".$row["gender"]."</td><td>".$row["email"]."</td><td>".$row["phone"]."</td></tr>";
+		}
+		echo"</table>";
+
+	}
+	
+	 else
+     {
+		echo "Error: " . $sql . "" . mysqli_error($conn);
+	 }
+	 mysqli_close($conn);
+}
+?>

@@ -1,0 +1,51 @@
+<html>
+<head>
+  <link rel="Stylesheet" type="text/css" href="bill.css">
+  <script src="bill.js"></script>
+</head>
+<body>
+  <div class="bg">
+  <div class="pricelist">
+   <h1>WELCOME TO OUR ANITS FRUIT STORE</h1>
+    <h1>FRUITS MENU</h1>
+    <table>
+      <tr>
+        <td>Strawberry</td>
+        <td>Apple</td>
+        <td>Grapes</td>
+        <td>Pomegranate</td>
+        <td>Guava</td>
+      </tr>
+      <tr>
+        <td>160 pkr/kg</td>
+        <td>200 pkr/kg</td>
+        <td>170 pkr/kg</td>
+        <td>220 pkr/kg</td>
+        <td>60 pkr/kg</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <form class="bill1">
+    <select id="sf">
+  <option selected value = "Strawberry">Strawberry</option>
+  <option value = "Apple">Apple</option>
+  <option value = "Grapes">Grapes</option>
+  <option value = "Guava">Guava</option>
+  <option value = "Pomegranate">Pomegranate</option>
+</select>
+    <input type="text" id="entrybox" pattern="\d*" placeholder="Input Amount">&nbsp;<b>KG</b>&nbsp;&nbsp;
+    <input type="button" value="ADD T0 CART" class="mybutton" id="getme" onClick="javascript: getMe();">
+  </form>
+  <br><br>
+  <textarea class="bill" cols="100" rows="12" id="writeme"></textarea>
+  <br>
+  <input type="submit" value="CLEAR TEXTAREA" class="mybutton bill3" id="clr" onClick="javascript: clearMe();">
+  <input type="submit" value="PAY BILL" class="mybutton bill2" id="out" onClick="javascript: checkOut();">
+  </div>
+  </body>
+
+</html>

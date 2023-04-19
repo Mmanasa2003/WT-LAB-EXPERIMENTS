@@ -1,0 +1,71 @@
+html,
+.left
+{
+	margin: 10;
+	font-family:sans-serif;
+	background-color: #c3f099;
+}
+.abc li:hover{
+	color:#f54290;
+	font-weight:bolder;
+}
+.bcd {
+	outline-color: pink;
+}
+.right
+{
+	background-color: #eda19d;
+	font-family: serif;
+}
+.container a
+{
+	gap:0.625%;
+	background-color: #dbf5ae;
+	outline-color: black;
+	outline-style: auto;
+	padding: 20px;
+	cellspacing: 20px;
+}
+a:link{
+	background-color:#e5fbfc;
+	text-decoration: none;
+}
+a:hover
+{
+	background-color: white;
+}
+a:focus
+{
+	background:palegoldenrod;
+	color:black;
+}
+
+img:hover
+{
+	border-radius: 50%;
+}
+.tables
+{
+	
+	border:1px solid;
+}
+tr:hover
+{
+	background-color: pink;
+}
+th,td{
+	border:2px;
+	border-color: black;
+	border-style: outset;
+	border-spacing:0px;
+	padding: 5px;
+	text-align: center;
+	}
+	tr:hover
+	{
+	background-color:palegreen;
+	}
+	h2{
+		text-align: center;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	}
